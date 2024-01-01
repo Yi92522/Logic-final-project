@@ -6,7 +6,8 @@
 將球透過反彈擊破磚塊將會獲得分數，如果獲得8分以上即通關。  
 
 程式模組說明:  
-module final(input CLK,   
+module final(  
+					 input CLK,     
 					 input sw_L,  
 					 input sw_R,  
 					 input shoot,  
