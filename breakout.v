@@ -54,8 +54,8 @@ reg [7:0] stateB [7:0];
 integer i, panel_center, alreadyShoot, ball_x, ball_y, direction, forward, go_mode, background, point, reset;
 reg [22:0] j;
 reg clk_4hz;
-reg [16:0] count,div_num;//
-reg [7:0] music;
+reg [16:0] count,div_num;
+//reg [7:0] music;
 
 always @(posedge CLK)//4hz
 begin
