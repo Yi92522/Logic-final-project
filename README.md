@@ -30,12 +30,14 @@ input sw_L,input sw_R,input shoot -> 接到 4-bit SW
   
 input pause -> 接到 8 dipsw  
 暫停遊戲  
-  
+
 input [3:0] back -> 接到 8 dipsw  
 設定關卡  
   
 output [7:0] lightR,output [7:0] lightG,output [7:0] lightB -> 接到 8x8 LED 矩陣  
 顯示打磚塊遊戲畫面  
+output reg [2:0] whichCol, output EN-> 接到 8x8 LED 矩陣  
+控制燈亮的位置    
   
 output reg[7:0] win -> 接到 LED 陣列  
 顯示得分  
