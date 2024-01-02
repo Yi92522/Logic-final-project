@@ -26,10 +26,21 @@ module final(
 *** 說明各 I/O 變數接到哪個 FPGA I/O 裝置，例如: button, button2 -> 接到 4-bit SW  
   
 input sw_L,input sw_R,input shoot -> 接到 4-bit SW  
+控制板子移動以及射擊  
+  
 input pause -> 接到 8 dipsw  
+暫停遊戲  
+  
 input [3:0] back -> 接到 8 dipsw  
+設定關卡  
+  
 output [7:0] lightR,output [7:0] lightG,output [7:0] lightB -> 接到 8x8 LED 矩陣  
+顯示打磚塊遊戲畫面  
+  
 output reg[7:0] win -> 接到 LED 陣列  
+顯示得分  
+  
 output reg a ,b,c,d,e,f,g -> 接到 七段顯示器  
+顯示剩餘機會  
   
 *** 請加強說明程式邏輯  
