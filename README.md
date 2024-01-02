@@ -24,7 +24,7 @@ module final(
                 output reg a ,b,c,d,e,f,g  
 );  
 
-*** 說明各 I/O 變數接到哪個 FPGA I/O 裝置，例如: button, button2 -> 接到 4-bit SW  
+#### 說明各 I/O 變數接到哪個 FPGA I/O 裝置，例如: button, button2 -> 接到 4-bit SW<br>  
   
 input sw_L,input sw_R,input shoot -> 接到 4-bit SW  
 控制板子移動以及射擊  
