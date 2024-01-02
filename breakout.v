@@ -605,7 +605,7 @@ begin
 						stateR[ball_x][ball_y]=1;
 						stateG[ball_x][ball_y]=1;
 						stateB[ball_x][ball_y]=1;
-						go_mode=23;
+						go_mode=23;//右下
 					end
 				   else
 					begin
@@ -615,10 +615,10 @@ begin
 						stateR[ball_x][ball_y]=1;
 						stateG[ball_x][ball_y]=1;
 						stateB[ball_x][ball_y]=1;
-						go_mode=13;
+						go_mode=13;右上
 					end
 				end
-				else
+				else//上邊界
 				begin
 					ball_x=ball_x-1;
 					ball_y=ball_y+1;
@@ -626,10 +626,10 @@ begin
 					stateR[ball_x][ball_y]=1;
 					stateG[ball_x][ball_y]=1;
 					stateB[ball_x][ball_y]=1;
-					go_mode=22;
+					go_mode=22;//左下
 				end			
 			end
-			else
+			else//沒遇到邊界
 			begin
 				if(state[ball_x-1][ball_y-1]==1)//打到磚塊
 				begin
@@ -648,7 +648,7 @@ begin
 					stateR[ball_x][ball_y]=1;
 					stateG[ball_x][ball_y]=1;
 					stateB[ball_x][ball_y]=1;
-					go_mode=12;
+					go_mode=12;//左上
 				end
 			end
 		end
@@ -660,7 +660,7 @@ begin
 			stateB[ball_x][ball_y] = 0;
 			if (ball_x==7||ball_y==0)//右邊界或上邊界
 			begin
-			   if(ball_x==7&&ball_y==0)//右上的腳
+				if(ball_x==7&&ball_y==0)//右上角
 				begin
 				   ball_x=ball_x-1;
 					ball_y=ball_y+1;
@@ -683,7 +683,7 @@ begin
 						stateR[ball_x][ball_y]=1;
 						stateG[ball_x][ball_y]=1;
 						stateB[ball_x][ball_y]=1;
-						go_mode=22;
+						go_mode=22;//左下
 					end
 				   else
 					begin
@@ -693,7 +693,7 @@ begin
 						stateR[ball_x][ball_y]=1;
 						stateG[ball_x][ball_y]=1;
 						stateB[ball_x][ball_y]=1;
-						go_mode=12;
+						go_mode=12;//左上
 					end
 				end
 				else//上邊界
@@ -704,7 +704,7 @@ begin
 					stateG[ball_x][ball_y]=1;
 					stateB[ball_x][ball_y]=1;
 					state[ball_x][ball_y]=1;
-					go_mode=23;
+					go_mode=23;//右下
 				end			
 			end
 			else//沒有打到邊界們
@@ -844,7 +844,7 @@ begin
 						point=0;
 					end
 				
-					else
+					else//球數減一並重製板子和球
 					begin
 					
 					  reset <= reset -1;
@@ -885,7 +885,7 @@ begin
 				end
 				else//一直往下
 				begin
-					if(state[ball_x][ball_y+1] == 1)
+					if(state[ball_x][ball_y+1] == 1)//有磚塊
 					begin
 						state[ball_x][ball_y+1] = 0;
 						stateR[ball_x][ball_y+1] = 0;
@@ -1017,7 +1017,7 @@ begin
 							stateR[ball_x][ball_y]=1;
 							stateG[ball_x][ball_y]=1;
 							stateB[ball_x][ball_y]=1;
-							go_mode=12;
+							go_mode=12;//左上
 						end
 						else//打到底板右邊
 						begin
@@ -1027,7 +1027,7 @@ begin
 							stateR[ball_x][ball_y]=1;
 							stateG[ball_x][ball_y]=1;
 							stateB[ball_x][ball_y]=1;
-							go_mode=13;
+							go_mode=13;//右上
 						end
 					end
 					else
@@ -1038,7 +1038,7 @@ begin
 				end
 				else if(ball_x==0)//左邊界
 				begin
-				   if(state[ball_x+1][ball_y+1]==1)
+					if(state[ball_x+1][ball_y+1]==1)//打到磚塊
 					begin
 					   state[ball_x+1][ball_y+1]=0;
 						stateR[ball_x+1][ball_y+1]=0;
@@ -1049,7 +1049,7 @@ begin
 						stateR[ball_x][ball_y]=1;
 						stateG[ball_x][ball_y]=1;
 						stateB[ball_x][ball_y]=1;
-						go_mode=13;
+						go_mode=13;//右上
 					end
 					else
 					begin
@@ -1059,10 +1059,10 @@ begin
 						stateR[ball_x][ball_y]=1;
 						stateG[ball_x][ball_y]=1;
 						stateB[ball_x][ball_y]=1;
-						go_mode=23;
+						go_mode=23;//右下
 					end
 				end
-				else if(state[ball_x-1][ball_y+1]==1)//打到磚塊
+				else if(state[ball_x-1][ball_y+1]==1)//沒在邊界，打到磚塊
 				begin
 				   state[ball_x-1][ball_y+1]=0;
 					stateR[ball_x-1][ball_y+1]=0;
@@ -1075,7 +1075,7 @@ begin
 					stateR[ball_x][ball_y]=1;
 					stateG[ball_x][ball_y]=1;
 					stateB[ball_x][ball_y]=1;
-					go_mode=13;
+					go_mode=13;//右上
 				end
 				else//持續左下
 				begin
@@ -1144,7 +1144,7 @@ begin
 						point=0;
 					end
 				
-					else
+					else//球數還沒用完
 					begin
 					
 					  reset <= reset -1;
@@ -1219,8 +1219,8 @@ begin
 							go_mode=13;
 						end
 					end
-					else
-					begin//y+1
+					else//沒打到板子
+					begin
 						ball_x=ball_x+1;
 						ball_y=ball_y+1;
 					end
@@ -1238,7 +1238,7 @@ begin
 						stateR[ball_x][ball_y]=1;
 						stateG[ball_x][ball_y]=1;
 						stateB[ball_x][ball_y]=1;
-						go_mode=12;
+						go_mode=12;//左上
 					end
 					else
 					begin
@@ -1248,7 +1248,7 @@ begin
 						stateR[ball_x][ball_y]=1;
 						stateG[ball_x][ball_y]=1;
 						stateB[ball_x][ball_y]=1;
-						go_mode=22;
+						go_mode=22;//左下
 					end
 				end
 				else if(state[ball_x+1][ball_y+1]==1)//打到磚塊
