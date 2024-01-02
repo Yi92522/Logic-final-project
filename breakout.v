@@ -67,6 +67,7 @@ end
 else
 j=j+1'b1;
 end
+
 	
 always @(posedge clk_4hz)
 begin
@@ -541,7 +542,7 @@ begin
 				stateG[ball_x][ball_y] = 1;	
 				stateB[ball_x][ball_y] = 1;	
 				go_mode = 21;
-				if (state[ball_x][ball_y-2]==1)
+				if (state[ball_x][ball_y-2]==1)//消磚塊
 				begin
 					state[ball_x][ball_y-2] = 0;
 					stateR[ball_x][ball_y-2] = 0;
@@ -549,7 +550,7 @@ begin
 					stateB[ball_x][ball_y-2] = 0;
 				end
 			end
-			else if(ball_y<0)
+			else if(ball_y<0)//上邊界
 			begin
 			   ball_y = ball_y + 2;
 				state[ball_x][ball_y] = 1;	
@@ -581,7 +582,7 @@ begin
 			stateB[ball_x][ball_y] = 0;
 			if (ball_x==0||ball_y==0)//左邊界或上邊界
 			begin
-			   if(ball_x==0&&ball_y==0)//左上的腳
+				if(ball_x==0&&ball_y==0)//左上角
 				begin
 				   ball_x=ball_x+1;
 					ball_y=ball_y+1;
