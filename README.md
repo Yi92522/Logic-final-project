@@ -1,6 +1,8 @@
 # Logic-final-project
   
-logic image/IMG_2353.jpg  
+#### Input/Output unit:<br>
+* 8x8 LED 矩陣，用來顯示對戰畫面。下圖為按下 clear 的初始畫面。<br>
+<img src="https://github.com/kamiry/FPGA-project-1/blob/master/images/IO1.jpg" width="300"/><br>  
   
 #### 功能說明:<br>  
 在選擇完不同的關卡之後，按下發射鍵即可開始遊玩。  
