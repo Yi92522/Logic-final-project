@@ -67,6 +67,7 @@ end
 else
 j=j+1'b1;
 end
+	
 always @(posedge clk_4hz)
 begin
 if(music==8'd208)//只有207個音
@@ -74,6 +75,7 @@ music<=0;
 else
 music<=music+1'b1;
 end
+	
 always @(posedge CLK)
 begin
 if(count==div_num)
@@ -84,6 +86,7 @@ end
 else
 count<=count+1'b1;
 end
+	
 parameter 
 L1=17'h1754e,
 L2=17'h14c81,
