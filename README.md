@@ -7,9 +7,9 @@
 <img src="https://github.com/Yi92522/Logic-final-project/blob/bc1f7c69e0588522da605b2678374ed3c6919652/logic%20image/IMG_2354.jpg" width="300"/><br>
 * 16 BITS LED，用來顯示得分，每消除一格磚塊隨即亮一個燈。<br>
 <img src="https://github.com/Yi92522/Logic-final-project/blob/21304fb1d2855fb0c02c95206368c181325193e6/logic%20image/IMG_2355.jpg" width="300"/><br>
-* 4 BITS SW，用來板子移動以及發射球。<br>
+* 4 BITS SW，S1S2用來左右移動板子，S4用來發射球。<br>
 <img src="https://github.com/Yi92522/Logic-final-project/blob/21688afcd2990a5e996e4636d9b90984f9998d3a/logic%20image/IMG_2356.jpg" width="300"/><br>
-* 8 dipsw，用來調整遊戲關卡。以及遊戲暫停。<br>
+* 8 dipsw，紅色1234代表四個遊戲關卡。藍色1用來暫停遊戲。<br>
 <img src="https://github.com/Yi92522/Logic-final-project/blob/20384afb10d69a948ca92f7c89953617717a8579/logic%20image/IMG_2357.jpg" width="300"/><br>  
   
   
