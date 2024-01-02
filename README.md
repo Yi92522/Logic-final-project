@@ -6,7 +6,7 @@
 * 8x8 LED 矩陣，用來顯示遊戲畫面。下圖設定關卡後的初始畫面。<br>
 <img src="https://github.com/Yi92522/Logic-final-project/blob/bc1f7c69e0588522da605b2678374ed3c6919652/logic%20image/IMG_2354.jpg" width="300"/><br>
 * 8x8 LED 矩陣，用來顯示遊戲畫面。下圖設定關卡後的初始畫面。<br>
-<img src="https://github.com/Yi92522/Logic-final-project/blob/7220fed44bfaa38b179c2b89b793ae76f066fc45/logic%20image/IMG_2353.jpg" width="300"/><br>
+<img src="https://github.com/Yi92522/Logic-final-project/blob/21304fb1d2855fb0c02c95206368c181325193e6/logic%20image/IMG_2355.jpg" width="300"/><br>
 * 8x8 LED 矩陣，用來顯示遊戲畫面。下圖設定關卡後的初始畫面。<br>
 <img src="https://github.com/Yi92522/Logic-final-project/blob/7220fed44bfaa38b179c2b89b793ae76f066fc45/logic%20image/IMG_2353.jpg" width="300"/><br>
 * 8x8 LED 矩陣，用來顯示遊戲畫面。下圖設定關卡後的初始畫面。<br>
