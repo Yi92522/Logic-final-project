@@ -10,7 +10,7 @@
 * 8x8 LED 矩陣，用來顯示遊戲畫面。下圖設定關卡後的初始畫面。<br>
 <img src="https://github.com/Yi92522/Logic-final-project/blob/21688afcd2990a5e996e4636d9b90984f9998d3a/logic%20image/IMG_2356.jpg" width="300"/><br>
 * 8x8 LED 矩陣，用來顯示遊戲畫面。下圖設定關卡後的初始畫面。<br>
-<img src="https://github.com/Yi92522/Logic-final-project/blob/7220fed44bfaa38b179c2b89b793ae76f066fc45/logic%20image/IMG_2353.jpg" width="300"/><br>  
+<img src="https://github.com/Yi92522/Logic-final-project/blob/20384afb10d69a948ca92f7c89953617717a8579/logic%20image/IMG_2357.jpg" width="300"/><br>  
   
   
 #### 功能說明:<br>  
