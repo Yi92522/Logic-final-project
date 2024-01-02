@@ -62,7 +62,7 @@ output reg a ,b,c,d,e,f,g -> 接到 七段顯示器
 output reg beep -> 接到蜂鳴器  
 播放背景音樂  
   
-#### Demo video: (請將影片放到雲端空間)
+
 #### Demo video: (請將影片放到雲端空間)
 
-<a href="[https://drive.google.com/file/d/1dsUKFF945moWpXyD0L86eseNf1l3repO/view?usp=sharing](https://drive.google.com/file/d/1MGVELfc3Qdur6w0UgtlaH6x8lO4o_wir/view?usp=sharing)" title="Demo Video"><img src="https://github.com/kamiry/FPGA-project-1/blob/master/images/IO4.jpg" alt="Demo Video" width="500"/></a>
+<a href="https://drive.google.com/file/d/1dsUKFF945moWpXyD0L86eseNf1l3repO/view?usp=sharing" title="Demo Video"><img src="https://github.com/kamiry/FPGA-project-1/blob/master/images/IO4.jpg" alt="Demo Video" width="500"/></a>
