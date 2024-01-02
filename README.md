@@ -45,4 +45,7 @@ output reg[7:0] win -> 接到 LED 陣列
 output reg a ,b,c,d,e,f,g -> 接到 七段顯示器  
 顯示剩餘機會  
   
+output reg beep -> 接到蜂鳴器  
+播放背景音樂  
+  
 *** 請加強說明程式邏輯  
