@@ -65,4 +65,4 @@ output reg beep -> 接到蜂鳴器
 
 #### Demo video: (請將影片放到雲端空間)
 
-<a href="https://drive.google.com/file/d/1dsUKFF945moWpXyD0L86eseNf1l3repO/view?usp=sharing" title="Demo Video"><img src="https://github.com/kamiry/FPGA-project-1/blob/master/images/IO4.jpg" alt="Demo Video" width="500"/></a>
+<a href="https://drive.google.com/file/d/1dsUKFF945moWpXyD0L86eseNf1l3repO/view?usp=sharing" title="Demo Video"><img src="https://github.com/Yi92522/Logic-final-project/blob/8aebc785107cb8c1d09a9b530c733b6ab9b4b9b9/logic%20image/IMG_2353.jpg" alt="Demo Video" width="500"/></a>
